@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: black;
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image:url("images/starstwinkle.gif");
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.sidenavB {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-image:url("images/starstwinkle.gif");
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.main {
+    background-color: black;
+    margin-left: 10%; /* Same as the width of the sidenav */
+    margin-right:10%;
+    height: 100%;
+/* padding: 0px 10px; */
+}
+.marquee {
+    background-color: orange;
+    width: 100%;
+	line-height: 5px;
+	
+	
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+.marquee p {
+    
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 14s linear infinite;
+    animation-direction: alternate;
+    color: #CD5246;
+    font-family: Chalkduster;
+    font-size: 26px;
+    
+
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+ 
+</div>
+
+<div class="main">
+    <div class="marquee">
+        <p>**-You are now in Ingmar's World. Welcome (⌐■_■) (⌐■_■) ** </p>
+    </div>
+
+    
+    <div class="myname">
+        <img src="images/name.gif" alt="INGMAR.FJOLLA" class="center">
+    </div>
+
+    <hr>
+    <nav>
+        <a href="/html/">About</a> |
+        <a href="/css/">Projects</a> |
+        <a href="/js/">games</a> |
+        <a href="/python/">Python</a>
+    </nav>
+
+    <hr>
+    
+    <div>
+        <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Stuart&dob=1610671309&gender=f&element=Water&pet=https%3A%2F%2Fi.123g.us%2Fc%2Feaug_worklike_a_dog_day%2Fcard%2F330043.gif&map=forest.jpg&background=1995.png&tablecolor=%23ff486e&textcolor=black" frameborder="0"></iframe>
+    </div>
+  
+</div>
+
+<div class="sidenavB">
+    
+  </div>
+   
+</body>
+</html> 
