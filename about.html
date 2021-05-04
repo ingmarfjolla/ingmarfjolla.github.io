@@ -48,6 +48,10 @@ body {
     height: 100%;
 /* padding: 0px 10px; */
 }
+/* footer { 
+    position: absolute;
+    bottom: 0; 
+    } */
 #bio{
     color: yellow;
     padding-left: 6px;
@@ -149,7 +153,12 @@ figcaption {
     <hr>
     <div id="parent">
         <div>
-            <img src="images/starwars1.JPG" alt="" >
+            <img src="images/starwars1.JPG" alt="jedi training image" usemap="#mapname" >
+            <map name="mapname">
+                <area id="DO" target="" alt="" title="" coords="76,232,148,182" shape="rect">
+                <area target="" alt="" title="" coords="181,231,304,181" shape="rect">
+            </map>
+            
         </div>
         <div>
             <p id="bio">
@@ -168,14 +177,21 @@ figcaption {
             </thead>
             <tr>
                 <td>
+                    <h4>May 4 2021</h1>
+                    <img src="images/may4th.JPG" alt=""width="200" height="200">
+                    <p>happy star wars day!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <h4>April 27 2021</h1>
-                    <p>Still looking for new employment!</p>
+                    <p>Hunt for employment continues!</p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <h4>March 10 2021</h1>
-                    <p>Ingmar Signs up for machine learning courses!</p>
+                    <p>Machine learning courses begin</p>
                 </td>
             </tr>
             <tr>
@@ -210,7 +226,7 @@ figcaption {
         </div>
     </div>
     
-    <footer>
+    <footer valign="bottom">
         <figure>
             <figcaption>
                 Proud member of the 

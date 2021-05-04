@@ -1,3 +1,17 @@
+
+/// this is for the image part
+///
+
+
+var dobutton = document.querySelector('#DO');
+// On Click
+dobutton.addEventListener("click",function(){
+  alert("A true Jedi, You are")
+});
+
+
+/////Image part ends here
+
 // Alright so we've discussed the way you can grab html elements, let's
 // see how we can interact with them in Javascript!
 
@@ -5,6 +19,7 @@
 
 // Grab the Header with h1
 var header = document.querySelector("h1")
+var newz = document.querySelectorAll("h4")
 
 // Then you can interface with the object.
 
@@ -32,6 +47,16 @@ function getRandomColor(){
     colorInput = getRandomColor()
     header.style.color = colorInput;
   }
-  
+  function changeColors(){
+    colorInput = getRandomColor()
+    for(var i = 0; i < newz.length; i++){
+      newz[i].style.color = colorInput;
+      console.log(newz[i])
+    }
+  }
   // Now perform the action over intervals (milliseocnds):
+  setInterval("changeColors()",500);
   setInterval("changeHeaderColor()",500);
+  
+  
+
