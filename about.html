@@ -103,13 +103,163 @@ figcaption {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
 }
+.iframeclass {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 10px solid;
+  border-radius: 32px;
+}
 
+.television {
+  width: 450px;
+  margin: 0 auto;
+}
 
+.television__top {
+  width: 40%;
+  margin: auto;
+  position: relative;
+}
+
+.television__antenna {
+  width: 5px;
+  height: 100px;
+  background-color: #3b3733;
+  margin-bottom: -10px;
+}
+
+.television__antenna--left {
+  transform: rotate(-30deg);
+  float: left;
+}
+
+.television__antenna--right {
+  transform: rotate(30deg);
+  float: right;
+}
+
+.television__antenna__base {
+  height: 20px;
+  background-color: #3b3733;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  margin-bottom: 10px;
+  clear: both;
+  position: relative;
+  z-index: 2;
+}
+
+.television__center {
+   position: relative;
+   z-index: 2;
+   width: 350px;
+   height: 200px;
+   background-color: #7a4e27;
+   border: solid 3px #eef4c4;
+   box-shadow: -10px -10px #d64832;
+   border-radius: 48px;
+   margin: 0 auto;
+   padding: 10px 15px;
+}
+
+.television__screen {
+   width: 270px;
+   height: 190px;
+   background-color: #eed5b6;
+   border-radius: 48px;
+   float: left;
+}
+
+.television__channels-wrapper {
+   width: 70px;
+   height: 190px;
+   background-color: #efd6b7;
+   border-radius: 48px;
+   float: right;
+}
+
+.television__channels {
+   padding: 0;
+}
+
+.television__channel {
+   list-style-type: none;
+   background-color: #7f4b23;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   margin: 5px;
+   float: left;
+   position: relative;
+}
+
+.television__channel a {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #e6a146;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+}
+
+.television__channel a:active {
+   box-shadow: inset rgba(255,255,255,0.6) 0 2px 2px,
+               inset rgba(0,0,0,0.15) 0 -2px 5px, /* inner shadow */
+					rgba(100,100,100,0.6) 0 2px 1px,
+               rgba(100,100,100,0.6) 0 2px 1px; /* color border */
+}
+
+.television__base {
+   width: 60%;
+   margin: auto;
+}
+
+.television__base:after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+.television__foot {
+   width: 20px;
+   height: 70px;
+	margin-top: -20px;
+   background-color: #7d4d25;
+   border: solid 3px #eed5b6;
+   border-radius: 48px;
+}
+
+.television__foot--left {
+   transform: rotate(30deg);
+   float: left;
+}
+
+.television__foot--right {
+   transform: rotate(-30deg);
+   float: right;
+}
+.navimage{ 
+    transition: all 0.3s ease-in-out 0s; 
+}
+.navimage:hover 
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
 
 </style>
 </head>
 <body>
-
+    <audio autoplay loop>
+        <source src="music/homepage-m.mp3" type="audio/mpeg"> 
+            <h1>not supported?</h1> 
+    </audio>
 <div class="sidenav">
  
 </div>
@@ -128,23 +278,23 @@ figcaption {
     <nav>
 
         <a href="/html/">
-            <img src="images/about.gif" alt="">
+            <img class= "navimage"src="images/smallergifs/about.gif" alt="">
             About
         </a>
         <a href="/html/">
-            <img src="images/about.gif" alt="">
+            <img class= "navimage" src="images/smallergifs/about-captain.gif" alt="">
             Projects
         </a>
         <a href="/html/">
-            <img src="images/about.gif" alt="">
+            <img class= "navimage" src="images/about.gif" alt="">
             Game
         </a>
         <a href="/html/">
-            <img src="images/about.gif" alt="">
+            <img class= "navimage" src="images/about.gif" alt="">
             Check-in
         </a>
         <a href="/html/">
-            <img src="images/about.gif" alt="">
+            <img class= "navimage" src="images/about.gif" alt="">
             Misc
         </a>
         
@@ -225,6 +375,34 @@ figcaption {
             <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Stuart&dob=1610671309&gender=f&element=Water&pet=https%3A%2F%2Fi.123g.us%2Fc%2Feaug_worklike_a_dog_day%2Fcard%2F330043.gif&map=forest.jpg&background=1995.png&tablecolor=%23ff486e&textcolor=black" frameborder="0"></iframe>
         </div>
     </div>
+
+    <div class="television">
+        <div class="television__top">
+          <div class="television__antenna television__antenna--left"></div>
+          <div class="television__antenna television__antenna--right"></div>
+          <div class="television__antenna__base"></div>
+        </div><!-- television__top -->
+        <div class="television__center">
+          <div class="television__screen">
+            <iframe class="iframeclass" src="https://www.youtube.com/embed/w3Wluvzoggg" frameborder="0" allowfullscreen></iframe>
+          </div><!-- television__screen -->
+          <div class="television__channels-wrapper">
+            <ul class="television__channels">
+              <li class="television__channel"><a href="https://www.youtube.com/embed/CpvpZKO0Lmk" title="Channel 1"> </a></li>
+              <li class="television__channel"><a href="https://www.youtube.com/embed/OM6xvpzqCUA?start=24" title="Channel 1"></a></li>
+              <li class="television__channel"><a href="https://www.youtube.com/embed/hXbeBGxus84" title="Channel 2"></a></li>
+              <li class="television__channel"><a href="https://www.youtube.com/embed/GfiCTnoqKag?start=12" title="Channel 3"></a></li>
+              <li class="television__channel"><a href="https://www.youtube.com/embed/5kxqODrGVlY" title="Channel 4"></a></li>
+              <li class="television__channel"><a href="https://www.youtube.com/embed/OhsXUPDBX90" title="Channel 5"></a></li>
+              <li class="television__channel"><a href="https://www.youtube.com/embed/s6SYXEhejw4" title="Channel 6"></a></li>
+            </ul>
+          </div><!-- television__channels-wrapper -->
+        </div><!-- television__center -->
+        <div class="television__base">
+          <div class="television__foot television__foot--left"></div>
+          <div class="television__foot television__foot--right"></div>
+        </div><!-- television__base -->
+      </div><!-- .television COURTEST OFhttps://codepen.io/SitePoint/pen/HinaL THANK U  --> 
     
     <footer valign="bottom">
         <figure>
