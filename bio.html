@@ -13,7 +13,7 @@ enjoy
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="prefetch" href="jump.html" />
 	<title>
-		Ingmar.Fjolla
+		Bio
 	</title>
 
 	<style>
@@ -22,49 +22,111 @@ enjoy
     background-image: url("images/biopageimages/bgstar.gif");;
     font-family: "Lato", sans-serif;
     }
-	
+	/* #nav-wrapper {
+        width:465px;
+        margin:0 auto;
+        padding:20px 0;
+        background:#3D3331;
+        } */
+
+        ul#nav {
+        font-family: Verdana;
+        font-size:14px;
+        list-style:none;
+        margin:0 auto;
+        padding:0;
+        width:455px;
+        overflow: auto;
+        }
+
+        ul#nav li {
+        display:inline;
+        }
+
+        ul#nav li a {
+        text-decoration:none;
+        display: block;
+        padding:5px 21px;
+        background:#5F3222;
+        color:#eee;
+        float:left;
+        text-align:center;
+        border-top:2px solid #815444;
+        border-right:2px solid #3d1000;
+        border-bottom:2px solid #3d1000;
+        border-left:2px solid #815444;
+        }
+
+        ul#nav li a:hover {
+        background:#a37666;
+        color:#000;
+        border-top:2px solid #815444;
+        border-right:2px solid #c59888;
+        border-bottom:2px solid #c59888;
+        border-left:2px solid #815444;
+        }
+        IMG.bio {
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+        }
+        P.biography{
+            background-color: beige;
+        }
     </style>
 </head>
 <body>
 
     
 <main>
-    <div class="marquee">
+    <!-- <div class="marquee">
         <p>**-You are now in Ingmar's World. Welcome (⌐■_■) (⌐■_■) ** </p>
     </div>
 
     
     <div class="myname">
         <img src="images/name.gif" alt="INGMAR.FJOLLA" class="center">
+    </div> -->
+
+    <hr>
+    <!-- where i got the nav bar from : https://vanseodesign.com/css/css-navigation-buttons/ -->
+    <div id="nav-wrapper">
+        <ul id="nav">
+          <li><a href="about.html">Home</a></li>
+          <li><a href="">Game</a></li>
+          <li><a href="guestbook.html">Guestbook</a></li>
+          <!-- <li><a href="">FAQ</a></li>
+          <li><a href="">Contact</a></li> -->
+        </ul>
+      </div>
+    <hr>
+
+    <div>
+        <img class= "bio"src="/Users/ingmar/Documents/IngmarsPersonalsite/images/biopageimages/biopic.jpeg" alt="" width="500" height="400" >
+
     </div>
+    <div>
+        <p class="biography">
+            Thank you for coming to my page! So I'm Ingmar. A little about myself for those interested I'm a 23 year
+            old up and coming engineer who graduated out of Hunter College in December 2020. I'm a first generation
+            Albanian American (forza shqiperia) born and raised in New York. I started out my college journey with the 
+            idea that I would be pursuing physical therapy since the physics of the human body and how it works really interested 
+            me (and still do) but really didn't feel as engaged until I took a comp sci class and loved the material. 
+            I enjoy solving problems and being able to continually learn new technology and am very proud of myself for 
+            'learning how to learn' and being able to help others with their studies/life/tech as well. 
+        </p>
 
-    <hr>
-    <nav>
+        <p class="biography">
+            As far as tech experience goes, I've worked as a discrete mathematics TA in the past, and have experience
+            with a lot of different tech stacks. Almost all my foundational CS work was with C++ and my others were done 
+            with different languages/frameworks including python and javascript and used React, Node JS, express, MongoDB, MySQL,
+            flask. My main interests are in software engineering, AI and Machine learning, and computer architecture which is where I hope 
+            to pivot to in the long term. Let me know if you have any questions!
+        </p>
 
-        <a href="/html/">
-            <img src="images/about.gif" alt="">
-            About
-        </a>
-        <a href="/html/">
-            <img src="images/about.gif" alt="">
-            Projects
-        </a>
-        <a href="/html/">
-            <img src="images/about.gif" alt="">
-            Game
-        </a>
-        <a href="/html/">
-            <img src="images/about.gif" alt="">
-            Check-in
-        </a>
-        <a href="/html/">
-            <img src="images/about.gif" alt="">
-            Misc
-        </a>
+    
         
-    </nav>
-
-    <hr>
+    </div>
     
 </main>
 </body>
